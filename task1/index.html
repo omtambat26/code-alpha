@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1 class="header">Welcome to Image Gallery</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="gallery">
+        <div class="image-container">
+            <img src="image/image1.jpg" alt="Image 1" onclick="openModal('image1.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 1</div>
+        </div>
+        <div class="image-container">
+            <img src="image/image2.jpg" alt="Image 2" onclick="openModal('image2.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 2</div>
+        </div>
+        <div class="image-container">
+            <img src="image/image3.jpg" alt="Image 3" onclick="openModal('image3.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 3</div>
+        </div>
+        <div class="image-container">
+            <img src="image/image4.jpg" alt="Image 1" onclick="openModal('image4.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 4</div>
+        </div>
+        <div class="image-container">
+            <img src="image/image5.jpg" alt="Image 5" onclick="openModal('image5.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 5</div>
+        </div>
+        <div class="image-container">
+            <img src="image/image6.jpg" alt="Image 6" onclick="openModal('image6.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 6</div>
+        </div>
+        <div class="image-container">
+            <img src="image/image7.jpg" alt="Image 7" onclick="openModal('image7.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 7</div>
+        </div>
+        <div class="image-container">
+            <img src="image/image8.jpg" alt="Image 8" onclick="openModal('image8.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 8</div>
+        </div>
+        <div class="image-container">
+            <img src="image/image9.jpg" alt="Image 9" onclick="openModal('image9.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 9</div>
+        </div>
+        <div class="image-container">
+            <img src="image/image10.jpg" alt="Image 10" onclick="openModal('image10.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 10</div>
+        </div>
+        <div class="image-container">
+            <img src="" alt="Image 11" onclick="openModal('image11.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 11</div>
+        </div>
+        <div class="image-container">
+            <img src="" alt="Image 12" onclick="openModal('image12.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 12</div>
+        </div>
+        <div class="image-container">
+            <img src="" alt="Image 1" onclick="openModal('image13.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 13</div>
+        </div>
+        <div class="image-container">
+            <img src="" alt="Image 2" onclick="openModal('image14.jpg')">
+            <div class="caption" style="text-align: center;">Caption for Image 14</div>
+        </div>
+
+    </div>
+
+    <div id="myModal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImg">
+        <div class="modal-nav">
+            <button onclick="prevImage()">Previous</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+    </div>
+    
+<div class="footer-line"></div>
+
+<footer>
+    <p>&copy; 2024 Your Image Gallery. All rights reserved.</p>
+    <p>Contact: imageGallery@gmail.com</p>
+    <p>Follow us on <a href="#">Twitter</a> | <a href="#">Facebook</a> | <a href="#">Instagram</a></p>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
